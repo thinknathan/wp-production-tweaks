@@ -55,7 +55,9 @@ function default_setup() {
     // page on front
     'show_on_front'            => 'page',
     // use the default page
-    'page_on_front '                => 2,
+    'page_on_front'                => 2,
+    // don't use gravatar
+    'show_avatars'                => 0,
   );
 
   // change the options!
