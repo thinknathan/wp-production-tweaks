@@ -76,10 +76,5 @@ function default_setup() {
   // delete default page
   //wp_delete_post( 2, TRUE );
 
-  // switch to theme defined in .env file
-  $default_theme = get_env('DEFAULT_THEME');
-  if ($default_theme) {
-    switch_theme( $default_theme );
-  }
 }
 add_action( 'after_setup_theme', __NAMESPACE__ . '\\default_setup' );
